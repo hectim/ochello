@@ -8,7 +8,7 @@ import TutorialScreen from './screens/TutorialScreen';
 import LevelScreen from './screens/LevelScreen';
 
 const App = createStackNavigator({
-  Menu: { screen: MenuScreen },
+  // Menu: { screen: MenuScreen },
   Tutorial: { screen: TutorialScreen },
   Level: {
     screen: LevelScreen,

@@ -1,12 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import { Dimensions } from 'react-native'
 
-export default class App extends React.Component {
+export default class Square extends React.Component {
   render() {
+    const { xCoord, yCoord, width, height } = this.props;
     return (
-      <View>
-        <Text>hi</Text>
-      </View>
+      <TouchableOpacity>
+        <Text style={{
+          width,
+          height,
+          backgroundColor: this.props.off ? 'grey' : 'green',
+          borderStyle: 'solid',
+          borderColor: 'black',
+          borderWidth: 1,
+        }}
+      />
+      </TouchableOpacity>
     );
   }
 }

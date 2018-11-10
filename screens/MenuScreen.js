@@ -7,8 +7,6 @@ import {
   Text,
   View
 } from 'react-native';
-import _ from 'lodash';
-
 
 const styles = StyleSheet.create({
   container: {
@@ -29,7 +27,7 @@ export default class MenuScreen extends React.Component {
   };
 
   static navigationOptions = {
-    title: '♛♛  Chello ♛♛',
+    title: '♛♛  Ochello ♛♛',
     headerTitleStyle: {
       textAlign:'center',
       alignSelf:'center',
@@ -80,7 +78,7 @@ export default class MenuScreen extends React.Component {
                 '',
                 'Want to Quit?',
                 [
-                  {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
+                  {text: 'Cancel', onPress: () => {}, style: 'cancel'},
                   {text: 'OK', onPress: () => BackHandler.exitApp()},
                 ],
                 { cancelable: true }
